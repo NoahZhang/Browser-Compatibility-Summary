@@ -16,4 +16,5 @@
 14. IE < 9确保select显示空白，options.length = 0
 15. 定义css浮动，IE使用el.style.styleFloat，其他使用cssFloat
 16. IE取得样式信息使用el.cssText,其他通过.getAttribute("style") 
-17. 
+17. IE创建ajax请求window.ActiveXObject( "Microsoft.XMLHTTP" )，非IE window.XMLHttpRequest()
+18. IE 绑定事件elem.attachEvent( "on" + type, eventHandle )，非IE elem.addEventListener( type, eventHandle, false );

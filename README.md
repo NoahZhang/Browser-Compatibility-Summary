@@ -19,3 +19,18 @@
 17. IE创建ajax请求window.ActiveXObject( "Microsoft.XMLHTTP" )，非IE window.XMLHttpRequest()
 18. IE 绑定事件elem.attachEvent( "on" + type, eventHandle )，非IE elem.addEventListener( type, eventHandle, false )
 19. IE < 9 不支持Array的如下方法：map,forEach,filter,every,some,reduce,lastIndexOf,indexOf,reduceRight
+20. IE6/7getAttribute和setAttribute fix
+<code>
+  tabindex: 'tabIndex',
+  readonly: 'readOnly',
+  'for': 'htmlFor',
+  'class': 'className',
+  maxlength: 'maxLength',
+  cellspacing: 'cellSpacing',
+  cellpadding: 'cellPadding',
+  rowspan: 'rowSpan',
+  colspan: 'colSpan',
+  usemap: 'useMap',
+  frameborder: 'frameBorder',
+  contenteditable: 'contentEditable'
+</code>
